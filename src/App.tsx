@@ -1,20 +1,16 @@
-import { useState } from 'react'
-import Table from './components/Table'
-import './App.css'
+import Table from "./components/Table";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-    <h1 className='font-semibold text-2xl'>Información Buses: </h1>
-    <div className="p-3">
-
-      <Table></Table>
-    </div>
-      
-    </>
-  )
+      <div className="flex flex-col gap-3 p-6">
+        <h1 className="font-semibold text-2xl px-3">Información Buses: </h1>
+        <div className="p-3">
+          <Table></Table>
+        </div>
+      </div>
+  );
 }
 
-export default App
+export default App;
